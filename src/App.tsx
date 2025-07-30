@@ -3,11 +3,9 @@ import "./styles/global.css";
 import "./styles/theme.css";
 
 export function App() {
-  console.log("testando");
-
   return (
     <>
-      <Heading />
+      <Heading> Teste 1</Heading>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim
         perferendis provident neque quis mollitia tempora est, voluptate in. Eos
