@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    padding: 2rem 0;
+}
+
+.menuLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.6rem;
+
+    background-color: var(--primary);
+    color: var(--text-over-primary);
+    border-radius: 1rem;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.menuLink svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.menuLink:hover {
+    background-color: var(--primary-light);
+}

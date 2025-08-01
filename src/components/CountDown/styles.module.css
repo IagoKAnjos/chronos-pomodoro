@@ -1,0 +1,14 @@
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: clamp(8rem, 30vw, 16rem);
+    font-weight: bold;
+
+    color: var(--text-over-primary-dark);
+}
+
+.countdown:hover {
+    color: var(--link-hover);
+}
