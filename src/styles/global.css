@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* 
+    Garante que a borda e o padding não aumentem o tamanho final do elemento.
+    Isso torna a criação de layouts MUITO mais fácil e previsível.
+    Por exemplo, uma div com width: 100px e padding: 10px continuará com 100px de largura total.
+  */
+  box-sizing: border-box;
+}
+
+/* 
+  2. Define um comportamento de rolagem suave na página.
+  Quando você clica em um link de âncora (ex: <a href="#secao">), a página rola suavemente
+  em vez de pular instantaneamente.
+*/
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem; /* 16px*/
+  background-color: var(--gray-900);
+}
+
+/* 
+  3. Remove os estilos padrão de listas.
+  Isso tira as "bolinhas" (bullet points) das listas <ul>.
+*/
+ul,
+ol {
+  list-style: none;
+}
+
+/* 
+  4. Remove os estilos padrão de links.
+  Isso tira o sublinhado e a cor padrão (geralmente azul ou roxo) dos links.
+*/
+a {
+  text-decoration: none;
+  color: inherit; /* Faz o link herdar a cor do seu elemento pai. */
+}
+
+/* 
+  5. Garante que imagens e mídias se ajustem ao seu contêiner.
+  Isso impede que imagens grandes "vazem" para fora da div que as contém,
+  tornando-as responsivas por padrão.
+*/
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+  6. Faz com que todos os elementos de formulário herdem a fonte do corpo da página.
+  Por padrão, inputs, botões e textareas usam uma fonte de sistema diferente.
+  Isso unifica a aparência do texto em todo o site.
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Remove o estilo padrão de botões para facilitar a customização.
+*/
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
