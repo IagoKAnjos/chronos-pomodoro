@@ -1,0 +1,21 @@
+.DefaultInput {
+  background-color: transparent;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--text-over-primary-dark);
+  border: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid var(--primary-dark);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.DefaultInput::placeholder {
+  color: var(--text-over-info);
+  font-style: italic;
+}
+
+.DefaultInput:focus {
+  border: 0.3rem solid var(--primary-dark);
+  border-radius: 0.8rem;
+}
